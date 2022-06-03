@@ -1,6 +1,5 @@
 body{
     background-image: url(background.jpg);
-    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav{
@@ -81,8 +80,6 @@ footer{
 
 .btn{
     background-color: aqua;
-    border: none;
-    color: black;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -91,11 +88,24 @@ footer{
     cursor: pointer;
     border-radius: 10px;
 }
+.cform{
+    color: aliceblue;
+    margin: 150px;
+    margin-bottom: 20px;
+    padding: 50px;
+    display: grid;
+    width: 300px;
+    background-color: rgba(127, 236, 255, 0.315);
+    border-radius: 20px;
+}
 .cimage{
-    margin-left: 55%;
-    margin-top: 5%;
+    margin-left: 100px;
+    margin-top: 50px;
     padding-top: 15px;
    padding-left: 30px;
+}
+.contact{
+    display: flex;
 }
 
 #loginmain{
@@ -131,8 +141,48 @@ footer{
 }
 
 #logindetails{
+    background-color: rgba(127, 236, 255, 0.315);
+    border-radius: 20px;
     margin: 300px;
-    padding-left: 100px;
+    padding: 100px;
     display: grid;
     width: 300px;
 }
+
+.signup{
+    background-color: rgba(127, 236, 255, 0.521);
+    border-radius: 20px;
+    border: 300px;
+    margin: 100px;
+    padding: 0px 200px 200px ;
+    text-align: center;
+    color: aliceblue;
+    
+    
+
+}
+.signup h3, p{
+    margin: 0%;
+    
+}
+
+
+.signup h3{
+    font-size: 50px;
+    margin-top: 0%;
+}
+.signupinfo{
+    background-color: rgba(29, 54, 58, 0.192);
+    display: grid;
+    padding: 50px 200px 100px 200px;
+    border-radius: 40px;
+    
+    
+
+}
+
+
+#footer{
+    text-align: center;
+}
+
