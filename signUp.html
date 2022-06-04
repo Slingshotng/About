@@ -23,61 +23,59 @@
             <section class="signup">
             <h3>Let's Get Started</h3>
             <p>Create An Account</p>
-            <div class="social">
+            <!-- <div class="social">
                 <img src="facebook-50.png" alt="" width="30px">
                 <img src="twitter-50.png" alt=""  width="30px">
                 <img src="gmail-logo-50.png" alt=""  width="30px">
 
-            </div>
+            </div> -->
             <div class="signupinfo">
                 <form action="">
                     <div>
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="inputbox" placeholder="Full Name" minlength="3" required>
                     </div>
                    
                     <div>
-                        <label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" id="inputbox" placeholder="Phone Number e.g 0816 402 5181"  pattern="[0-9]{4} [0-9]{3} [0-9]{4}" required>
                     </div>
                      
                     <div>
-                        <label for="gender">Gender</label>
-                        <select name="gender" id="gender">
+                        <select name="gender" id="inputbox" required>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                          </select>
                     </div>
                    <div>
-                    <label for="country">Country</label>
-                    <input type="text" name="country" id="country">
+                    <input type="text" name="country" id="inputbox" placeholder="Country" required>
                    </div>
                     
                    <div>
-                    <label for="state">State/Province</label>
-                    <input type="text" name="state" id="state">
+                    <input type="text" name="state" id="inputbox" placeholder="State/Province" required>
                    </div>
                      
                    <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="inputbox" placeholder="Email" required>
                    </div>
                      
                    <div>
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="password">
-                    <input type="password" placeholder="confirm password">
+                    <input type="password" placeholder="password" id="inputbox" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                    </div>
-                   <input type="submit" value="Sign Up">
+
+                   <div>
+                    <input type="password" placeholder="confirm password" id="inputbox" required>
+                   </div>
+                   <input type="submit" value="Sign Up" class="btn">
                 
                     
                 </form>
+                <hr>
+                <p>Do you have an account? <a href="login.html"> <b>Sign in </b></a></p>
                
             </div>
             
             </section>
-            <div>
-                <img src="signup.png" alt="" width="400px">
+            <div id="signup-img">
+                <img src="signup.png" alt="" width="700px">
             </div>
         </main>
 

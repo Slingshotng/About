@@ -1,6 +1,7 @@
 body{
     background-image: url(background.jpg);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    font-family: Helvetica, sans-serif;
 }
 nav{
    position: sticky;
@@ -16,6 +17,7 @@ a{
 
 #navbar{
     display: flex;
+    padding-top: 10px;
     padding-right: 30px;
     text-decoration: none;
 
@@ -70,11 +72,12 @@ a{
 
 footer{
     color: aliceblue;
-    position: fixed;
-    top: 90%;
+    position: absolute;
+    top: 95%;
     left: 40%;
     display: flex;
     font-size: small;
+    text-align: center;
     
 }
 
@@ -90,7 +93,7 @@ footer{
 }
 .cform{
     color: aliceblue;
-    margin: 150px;
+    margin: 140px;
     margin-bottom: 20px;
     padding: 50px;
     display: grid;
@@ -115,7 +118,6 @@ footer{
 #welcome{
     background-color: #00ffaaa1;
     width: 35%;
-    height: 1080px;
     padding-top: 300px;
     padding-right: 50px;
     text-align: center;
@@ -137,24 +139,23 @@ footer{
 #sign{
     background-color: #797775ee;
     width: 65%;
-    height: 1080px;  
+    height: 100vh;  
 }
 
 #logindetails{
     background-color: rgba(127, 236, 255, 0.315);
     border-radius: 20px;
-    margin: 300px;
+    margin: 100px 300px 300px 300px;
     padding: 100px;
-    display: grid;
     width: 300px;
 }
 
 .signup{
-    background-color: rgba(127, 236, 255, 0.521);
+    background-color: rgba(127, 236, 255, 0.377);
+    
     border-radius: 20px;
-    border: 300px;
     margin: 100px;
-    padding: 0px 200px 200px ;
+    padding: 20px 600px 200px ;
     text-align: center;
     color: aliceblue;
     
@@ -172,17 +173,31 @@ footer{
     margin-top: 0%;
 }
 .signupinfo{
+    margin: 10px;
     background-color: rgba(29, 54, 58, 0.192);
-    display: grid;
-    padding: 50px 200px 100px 200px;
-    border-radius: 40px;
-    
-    
+    box-shadow: 0 0 4px 0 rgb(49, 49, 48);
+    padding: 50px 50px 50px 50px;
+    outline: none;
+  
 
 }
 
+#inputbox{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 0px;
+    border: #00ffaaa1;
+    width: 80%;
 
-#footer{
-    text-align: center;
+}
+#signup-img{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+
+}
+
+hr{
+    width: 80%;
 }
 
